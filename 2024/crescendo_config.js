@@ -2,10 +2,10 @@ var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2024",
-  "page_title": "Crescendo IC",
+  "page_title": "Crescendo 1502",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials XCV",
+    { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024miann",
+      "defaultValue": "2024mimtp",
       "required": "true"
     },
     { "name": "Match Level",
