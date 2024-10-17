@@ -5,7 +5,7 @@ var config_data = `
   "page_title": "Crescendo IC",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "Scouter Initials XCV",
       "code": "s",
       "type": "scouter",
       "size": 5,
