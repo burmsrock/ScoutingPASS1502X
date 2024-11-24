@@ -51,7 +51,7 @@ var config_data = `
     },
         { "name": "Predicition",
       "code": "p",
-      "type": "robot",
+      "type": "predict",
       "choices": {
         "r": "Red",
         "b": "Blue",
