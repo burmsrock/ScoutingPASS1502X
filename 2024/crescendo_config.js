@@ -2,7 +2,7 @@ var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2024",
-  "page_title": "Crescendo 1502",
+  "page_title": "Crescendo 1502 WW",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
