@@ -8,8 +8,8 @@ var config_data = `
     { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
-      "size": 5,
-      "maxSize": 5,
+      "size": 12,
+      "maxSize": 12,
       "required": "true"
     },
     { "name": "Event",
@@ -46,6 +46,15 @@ var config_data = `
         "b2": "Blue-2<br>",
         "r3": "Red-3",
         "b3": "Blue-3"
+      },
+      "required":"true"
+    },
+        { "name": "Predicition",
+      "code": "r",
+      "type": "robot",
+      "choices": {
+        "r": "Red-1",
+        "b": "Blue-1<br>",
       },
       "required":"true"
     },
