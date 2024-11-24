@@ -50,11 +50,11 @@ var config_data = `
       "required":"true"
     },
         { "name": "Predicition",
-      "code": "r",
+      "code": "p",
       "type": "robot",
       "choices": {
-        "r": "Red-1",
-        "b": "Blue-1<br>",
+        "r": "Red",
+        "b": "Blue",
       },
       "required":"true"
     },
