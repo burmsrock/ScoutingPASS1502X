@@ -56,7 +56,7 @@ var config_data = `
       "max": 99999
     },
     { "name": "Predicition",
-      "code": "as",
+      "code": "p",
       "type": "predict",
       "choices": {
         "r": "Red",
