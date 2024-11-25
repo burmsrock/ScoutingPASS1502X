@@ -54,7 +54,7 @@ var config_data = `
       "type": "predict",
       "choices": {
         "r": "Red",
-        "b": "Blue",
+        "b": "Blue"
       },
       "required":"true"
     },
