@@ -57,7 +57,7 @@ var config_data = `
     },
     { "name": "Predicition",
       "code": "p",
-      "type": "predict",
+      "type": "radio",
       "choices": {
         "r": "Red",
         "b": "Blue"
