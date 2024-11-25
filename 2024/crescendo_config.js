@@ -59,8 +59,8 @@ var config_data = `
       "code": "p",
       "type": "radio",
       "choices": {
-        "r": "Red",
-        "b": "Blue",
+        "r": "Red<br>",
+        "b": "Blue<br>",
         "t": "Tie"
       },
       "defaultValue": "t"
