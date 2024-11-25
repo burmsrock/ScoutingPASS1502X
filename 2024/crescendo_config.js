@@ -5,7 +5,7 @@ var config_data = `
   "page_title": "Crescendo 1502 WW",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "Scouter First Name",
       "code": "s",
       "type": "scouter",
       "size": 12,
