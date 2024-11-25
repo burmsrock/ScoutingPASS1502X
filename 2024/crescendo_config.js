@@ -49,7 +49,7 @@ var config_data = `
       },
       "required":"true"
     },
-        { "name": "Predicition",
+    { "name": "Predicition",
       "code": "as",
       "type": "predict",
       "choices": {
