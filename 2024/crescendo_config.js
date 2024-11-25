@@ -61,7 +61,7 @@ var config_data = `
       "choices": {
         "r": "Red",
         "b": "Blue",
-        "t": "tie",
+        "t": "tie"
       },
       "defaultValue": "t"
     }
