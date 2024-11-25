@@ -60,9 +60,10 @@ var config_data = `
       "type": "radio",
       "choices": {
         "r": "Red",
-        "b": "Blue"
+        "b": "Blue",
+        "t": "tie",
       },
-      "required":"true"
+      "defaultValue": "t"
     }
 
   ],
