@@ -68,7 +68,7 @@ var config_data = `
       "type": "radio",
       "choices":{
         "r": "Red<br>",
-        "b": "Blue<br>"
+        "b": "Blue<br>",
         "t": "Tie"
         }
         "defaultValue": "t"
