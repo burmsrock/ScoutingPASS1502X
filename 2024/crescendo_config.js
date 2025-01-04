@@ -73,19 +73,19 @@ var config_data = `
       "type": "bool"
     },
     { "name": "L1 Scores",
-      "code": "al1",
+      "code": "alo",
       "type": "counter"
     },
     { "name": "L2 Scores",
-      "code": "al2",
+      "code": "altw",
       "type": "counter"
     },    
     { "name": "L3 Scores",
-      "code": "al3",
+      "code": "alth",
       "type": "counter"
     },
     { "name": "L4 Scores",
-      "code": "al4",
+      "code": "alf",
       "type": "counter"
     },
     { "name": "Processor Scores",
