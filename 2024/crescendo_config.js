@@ -105,23 +105,46 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Amp Scores",
+ { "name": "L1 Scores",
       "code": "tas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
-      "code": "tss",
+    { "name": "L2 Scores",
+      "code": "tsq",
       "type": "counter"
     },
-    { "name": "Times Amplified",
-      "code": "tta",
+    { "name": "L3 Scores",
+      "code": "tsw",
       "type": "counter"
     },
-    { "name": "Pickup From",
+    { "name": "L4 Scores",
+      "code": "tsk",
+      "type": "counter"
+    },
+    { "name": "Processor Scores",
+      "code": "tsd",
+      "type": "counter"
+    },
+    { "name": "Net Scores",
+      "code": "tsg",
+      "type": "counter"
+    }
+    { "name": "Pickup Coral From",
       "code": "tpu",
       "type": "radio",
       "choices": {
         "s": "Source<br>",
+        "f": "Floor<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Pickup Algae From",
+      "code": "tpa",
+      "type": "radio",
+      "choices": {
+        "r": "Reef<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
