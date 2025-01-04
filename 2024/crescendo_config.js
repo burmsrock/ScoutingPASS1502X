@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
+      "defaultValue": "2024miann",
       "required": "true"
     },
     { "name": "Match Level",
@@ -62,6 +62,16 @@ var config_data = `
       "clickRestriction": "one",
       "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
       "shape": "circle 5 black red true"
+    },
+    { "name": "Predicition",
+      "code": "p",
+      "type": "radio",
+      "choices":{
+        "r": "Red<br>",
+        "b": "Blue<br>"
+        "t": "Tie"
+        }
+        "defaultValue": "t"
     }
   ],
   "auton": [
