@@ -1,21 +1,21 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2025",
-  "page_title": "Reefscape 1502",
+  "title": "Scouting PASS 2024",
+  "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter First Name",
+    { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
-      "size": 12,
-      "maxSize": 12,
+      "size": 5,
+      "maxSize": 5,
       "required": "true"
     },
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024mimtp",
+      "defaultValue": "2023tnkn",
       "required": "true"
     },
     { "name": "Match Level",
@@ -62,25 +62,21 @@ var config_data = `
       "clickRestriction": "one",
       "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
       "shape": "circle 5 black red true"
-    },
-    { "name": "Predicition",
-      "code": "p",
-      "type": "radio",
-      "choices": {
-        "r": "Red<br>",
-        "b": "Blue<br>",
-        "t": "Tie"
-      },
-      "defaultValue": "t"
     }
-
   ],
   "auton": [
     { "name": "Leave Starting Zone",
       "code": "al",
       "type": "bool"
+    },
+    { "name": "Amp Scores",
+      "code": "aas",
+      "type": "counter"
+    },
+    { "name": "Speaker Scores",
+      "code": "ass",
+      "type": "counter"
     }
-    
   ],
   "teleop": [
     { "name": "Amp Scores",
