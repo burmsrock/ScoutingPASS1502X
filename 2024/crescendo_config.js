@@ -70,7 +70,7 @@ var config_data = `
         "r": "Red<br>",
         "b": "Blue<br>",
         "t": "Tie"
-        }
+        },
         "defaultValue": "t"
     }
   ],
