@@ -153,7 +153,7 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
+    { "name": "Cage Timer",
       "code": "dt",
       "type": "timer"
     },
@@ -162,18 +162,13 @@ var config_data = `
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
-        "o": "Onstage<br>",
-        "s": "Onstage (Spotlit)<br>",
-        "h": "Harmony<br>",
+        "o": "High Cage<br>",
+        "s": "Low Cage<br>",
         "a": "Attempted but failed<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
     },
-    { "name": "Note in Trap",
-      "code": "nit",
-      "type": "bool"
-    }
   ],
   "postmatch": [
     { "name": "Driver Skill",
