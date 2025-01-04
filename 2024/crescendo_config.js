@@ -71,31 +71,8 @@ var config_data = `
     { "name": "Leave Starting Zone",
       "code": "al",
       "type": "bool"
-    },
-    { "name": "L1 Scores",
-      "code": "alo",
-      "type": "counter"
-    },
-    { "name": "L2 Scores",
-      "code": "altw",
-      "type": "counter"
-    },    
-    { "name": "L3 Scores",
-      "code": "alth",
-      "type": "counter"
-    },
-    { "name": "L4 Scores",
-      "code": "alf",
-      "type": "counter"
-    },
-    { "name": "Processor Scores",
-      "code": "aps",
-      "type": "counter"
-    },
-    { "name": "Net Scores",
-      "code": "ans",
-      "type": "counter"
     }
+    
   ],
   "teleop": [
     { "name": "Amp Scores",
