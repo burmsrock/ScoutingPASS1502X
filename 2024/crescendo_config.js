@@ -139,17 +139,6 @@ var config_data = `
         "x": "Not Attempted"
       },
       "defaultValue": "x"
-    },
-    { "name": "Pickup Algae From",
-      "code": "tpa",
-      "type": "radio",
-      "choices": {
-        "r": "Reef<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
     }
   ],
   "endgame": [
