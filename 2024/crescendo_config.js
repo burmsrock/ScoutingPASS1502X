@@ -128,7 +128,7 @@ var config_data = `
     { "name": "Net Scores",
       "code": "tsg",
       "type": "counter"
-    }
+    },
     { "name": "Pickup Coral From",
       "code": "tpu",
       "type": "radio",
