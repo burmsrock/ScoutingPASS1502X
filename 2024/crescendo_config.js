@@ -79,12 +79,28 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
+    { "name": "L1 Scores",
       "code": "aas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
-      "code": "ass",
+    { "name": "L2 Scores",
+      "code": "asq",
+      "type": "counter"
+    }
+    { "name": "L3 Scores",
+      "code": "asw",
+      "type": "counter"
+    }
+    { "name": "L4 Scores",
+      "code": "ask",
+      "type": "counter"
+    }
+    { "name": "Processor Scores",
+      "code": "asd",
+      "type": "counter"
+    }
+    { "name": "Net Scores",
+      "code": "asg",
       "type": "counter"
     }
   ],
