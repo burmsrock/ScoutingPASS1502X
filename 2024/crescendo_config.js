@@ -86,19 +86,19 @@ var config_data = `
     { "name": "L2 Scores",
       "code": "asq",
       "type": "counter"
-    }
+    },
     { "name": "L3 Scores",
       "code": "asw",
       "type": "counter"
-    }
+    },
     { "name": "L4 Scores",
       "code": "ask",
       "type": "counter"
-    }
+    },
     { "name": "Processor Scores",
       "code": "asd",
       "type": "counter"
-    }
+    },
     { "name": "Net Scores",
       "code": "asg",
       "type": "counter"
