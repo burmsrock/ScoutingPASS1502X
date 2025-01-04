@@ -1,8 +1,8 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2024",
-  "page_title": "Crescendo 1502",
+  "title": "Scouting PASS 2025",
+  "page_title": "Reefscape 1502",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter First Name",
@@ -55,14 +55,6 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png",
-      "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
-      "shape": "circle 5 black red true"
-    },
     { "name": "Predicition",
       "code": "p",
       "type": "radio",
@@ -80,12 +72,28 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
-      "code": "aas",
+    { "name": "L1 Scores",
+      "code": "al1",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
-      "code": "ass",
+    { "name": "L2 Scores",
+      "code": "al2",
+      "type": "counter"
+    },    
+    { "name": "L3 Scores",
+      "code": "al3",
+      "type": "counter"
+    },
+    { "name": "L4 Scores",
+      "code": "al4",
+      "type": "counter"
+    },
+    { "name": "Processor Scores",
+      "code": "aps",
+      "type": "counter"
+    },
+    { "name": "Net Scores",
+      "code": "ans",
       "type": "counter"
     }
   ],
