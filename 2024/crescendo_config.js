@@ -1,15 +1,15 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2024",
-  "page_title": "Crescendo",
+  "title": "Scouting PASS 2025",
+  "page_title": "Reefscape 1502 Scouting",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "Scouter name",
       "code": "s",
       "type": "scouter",
-      "size": 5,
-      "maxSize": 5,
+      "size": 15,
+      "maxSize": 15,
       "required": "true"
     },
     { "name": "Event",
