@@ -214,7 +214,7 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Notes (>2)",
+    { "name": "Dropped Coral (>2)",
       "code": "dn",
       "type": "bool"
     },
