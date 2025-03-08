@@ -1232,12 +1232,12 @@ function updateMatchStart(event) {
 function onTeamnameChange(event) {
   var newNumber = document.getElementById("input_t").value;
   var teamLabel = document.getElementById("teamname-label");
-  document.getElementById("input_n").value = 'DanTeam' //getTeamName(newNumber);
+  document.getElementById("input_n").value = getTeamName(newNumber);
   if (newNumber != "") {
     teamLabel.innerText = getTeamName(newNumber) != "" ? "You are scouting " + getTeamName(newNumber) : "That team isn't playing this match, please double check to verify correct number";
   } else {
     teamLabel.innerText = "";
-    document.getElementById("input_n").value = 'DanTeam' //getTeamName(newNumber);
+    document.getElementById("input_n").value = getTeamName(newNumber);
   }
 }
 
