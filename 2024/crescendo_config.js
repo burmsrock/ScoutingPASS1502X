@@ -210,7 +210,7 @@ var config_data = `
       },
       "defaultValue":"3"
     },
-    { "name": "Died/Immobilized",
+    { "name": "Died/Immobilized/Gamepiece Stuck",
       "code": "die",
       "type": "bool"
     },
@@ -222,9 +222,14 @@ var config_data = `
       "code": "dn",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
+    { "name": "Would pick<br>for an alliance?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
+      "type": "bool"
+    },
+    { "name": "Would NOT pick<br>for an alliance?",
+      "tooltip": "Would NOT pick this robot under any circumstances",
+      "code": "dnp",
       "type": "bool"
     },
     { "name": "Comments",
