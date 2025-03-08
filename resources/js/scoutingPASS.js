@@ -1224,7 +1224,6 @@ function updateMatchStart(event) {
   if (event.target.id == "input_m") {
     if (getRobot() != "" && typeof getRobot()) {
       document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
-      document.getElementById("input_n").value = getTeamName(document.getElementById("input_t").value);
       onTeamnameChange();
     }
   }
@@ -1237,6 +1236,7 @@ function onTeamnameChange(event) {
     teamLabel.innerText = getTeamName(newNumber) != "" ? "You are scouting " + getTeamName(newNumber) : "That team isn't playing this match, please double check to verify correct number";
   } else {
     teamLabel.innerText = "";
+    document.getElementById("input_n").value = teamLabel;
   }
 }
 
