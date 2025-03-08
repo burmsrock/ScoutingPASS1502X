@@ -5,7 +5,7 @@ var config_data = `
   "page_title": "Reefscape 1502 Scouting",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter name (Firstname Lastname)",
+    { "name": "Scouter name<br>(Firstname Lastname)",
       "code": "s",
       "type": "scouter",
       "size": 15,
@@ -56,7 +56,7 @@ var config_data = `
       "max": 99999
     },
     { "name": "Team Name",
-      "code": "name",
+      "code": "n",
       "type": "text",
       "size": 15,
       "maxSize": 50,
