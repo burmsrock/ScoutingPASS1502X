@@ -129,6 +129,10 @@ var config_data = `
       "code": "tsg",
       "type": "counter"
     },
+    { "name": "Penalties",
+      "code": "pen",
+      "type": "counter"
+    },
     { "name": "Pickup Coral From",
       "code": "tpu",
       "type": "radio",
