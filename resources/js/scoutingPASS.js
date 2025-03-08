@@ -1224,7 +1224,7 @@ function updateMatchStart(event) {
   if (event.target.id == "input_m") {
     if (getRobot() != "" && typeof getRobot()) {
       document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
-      document.getElementById("input_name").value = getTeamName(document.getElementById("input_t").value)
+      document.getElementById("input_name").value = getTeamName(document.getElementById("input_t").value);
       onTeamnameChange();
     }
   }
