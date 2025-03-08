@@ -61,7 +61,7 @@ var config_data = `
       "size": 15,
       "maxSize": 50,
       "defaultValue": "Team Name"
-    }
+    },
     { "name": "Auto Start Position",
       "code": "as",
       "type": "clickable_image",
