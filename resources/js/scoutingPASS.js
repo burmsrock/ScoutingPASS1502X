@@ -682,7 +682,7 @@ function configure() {
   if(mydata.hasOwnProperty('dataFormat')) {
     dataFormat = mydata.dataFormat;
   }
-  
+
   if (mydata.hasOwnProperty('title')) {
     document.title = mydata.title;
   }
@@ -876,7 +876,7 @@ function updateQRHeader() {
 
 function qr_regenerate() {
   // Validate required pre-match date (event, match, level, robot, scouter)
-  if (!pitScouting) {  
+  if (!pitScouting) {
     if (validateData() == false) {
       // Don't allow a swipe until all required data is filled in
       return false
@@ -1224,6 +1224,7 @@ function updateMatchStart(event) {
   if (event.target.id == "input_m") {
     if (getRobot() != "" && typeof getRobot()) {
       document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
+      document.getElementById("input_name").value = getTeamName(document.getElementById("input_t").value)
       onTeamnameChange();
     }
   }

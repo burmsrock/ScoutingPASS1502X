@@ -55,6 +55,13 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
+    { "name": "Team Name",
+      "code": "name",
+      "type": "text",
+      "size": 15,
+      "maxSize": 50,
+      "defaultValue": "Team Name"
+    }
     { "name": "Auto Start Position",
       "code": "as",
       "type": "clickable_image",
@@ -210,7 +217,7 @@ var config_data = `
       },
       "defaultValue":"3"
     },
-    { "name": "Died/Immobilized/Gamepiece Stuck",
+    { "name": "Died/<br>Immobilized/<br>Gamepiece Stuck",
       "code": "die",
       "type": "bool"
     },
