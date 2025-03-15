@@ -176,7 +176,7 @@ var config_data = `
         "o": "High Cage<br>",
         "s": "Low Cage<br>",
         "a": "Attempted/Failed & Parked<br>",
-        "x": "No park/climb attempted"
+        "x": "No park or climb attempted"
       },
       "defaultValue": "x"
     }
