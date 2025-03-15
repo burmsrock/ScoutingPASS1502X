@@ -914,6 +914,9 @@ function clearForm() {
       document.getElementById("input_m").value = match + 1
     }
 
+    // Set default comment back to None
+    document.getElementById("input_Comments").value = "None"
+
     // Robot
     resetRobot()
   }
