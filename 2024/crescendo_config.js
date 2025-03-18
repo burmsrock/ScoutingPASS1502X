@@ -2,7 +2,7 @@ var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2025",
-  "page_title": "Reefscape 1502 Scouting v1.1",
+  "page_title": "Reefscape 1502 Scouting v1.101",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter name<br>(Firstname Lastname)",
