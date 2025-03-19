@@ -914,9 +914,6 @@ function clearForm() {
       document.getElementById("input_m").value = match + 1
     }
 
-    // Set default comment back to None
-    document.getElementById("input_Comments").value = "Reset";
-
     // Robot
     resetRobot();
   }
@@ -993,6 +990,12 @@ function clearForm() {
       }
     }
   }
+
+  // Reset comment field to default:
+  if (!pitScouting) {
+    document.getElementById("input_co").value = "None";
+  }
+
   drawFields()
 }
 
