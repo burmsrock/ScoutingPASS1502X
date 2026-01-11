@@ -1,19 +1,21 @@
+var config_data = `
+{
   "dataFormat": "tsv",
   "title": "Scouting PASS 2026",
-  "page_title": "Rebuilt 1502 Scouting v1.0",
+  "page_title": "REBUILT",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter name<br>(Firstname Lastname)",
+    { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
-      "size": 15,
-      "maxSize": 15,
+      "size": 5,
+      "maxSize": 5,
       "required": "true"
     },
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025MICMP3",
+      "defaultValue": "2026ilch",
       "required": "true"
     },
     { "name": "Match Level",
@@ -45,7 +47,7 @@
         "r3": "Red-3",
         "b3": "Blue-3"
       },
-      "required":"true"
+      "required": "true"
     },
     { "name": "Team #",
       "code": "t",
@@ -53,118 +55,88 @@
       "min": 1,
       "max": 99999
     },
-    { "name": "Team Name update 3",
-      "code": "n",
-      "type": "text",
-      "size": 15,
-      "maxSize": 50,
-      "defaultValue": "Team Name"
-    },
-    { "name": "Prediction",
-      "code": "p",
-      "type": "radio",
-      "choices":{
-        "r": "Red<br>",
-        "b": "Blue<br>",
-        "t": "Tie"
-        },
-        "defaultValue": "t"
+    { "name": "Auto Start Position",
+      "code": "as",
+      "type": "clickable_image",
+      "filename": "2026/half_field.png",
+      "clickRestriction": "one",
+      "dimensions": "7 10",
+      "allowableResponses": "4 11 18 25 32 39 46 53 60 67",
+      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
-    { "name": "Balls Scored",
-      "code": "aab",
+    { "name": "Auto Scoring Position",
+      "code": "asp",
+      "type": "clickable_image",
+      "filename": "2026/half_field.png",
+      "dimensions": "7 10",
+      "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
+      "shape": "circle 5 black red true"
+    },
+    { "name": "Fuel Scored",
+      "code": "afs",
       "type": "counter"
     },
-    { "name": "Used Depot?",
-      "code": "aad",
-      "type": "bool"
-    },
-    { "name": "Used Oupost?",
-      "code": "aao",
-      "type": "bool"
-    },
-    { "name": "Used Neutral Zone?",
-      "code": "aad",
-      "type": "bool"
-    },
-    { "name": "Climb Status",
-      "code": "aac",
-      "type":"radio",
+    { "name": "Climb (L1)",
+      "code": "ac",
+      "type": "radio",
       "choices": {
-        "o": "L1",
-        "a": "Attempted/Failed",
-        "x": "No Climb Attempted"
+        "c": "Climbed<br>",
+        "a": "Attempted<br>",
+        "x": "Not Attempted"
       },
-            "defaultValue": "x"
+      "defaultValue": "x"
+    },
+    { "name": "Pickup from Depot",
+      "code": "afd",
+      "type": "bool"
+    },
+    { "name": "Pickup from Outpost",
+      "code": "afo",
+      "type": "bool"
+    },
+    { "name": "Pickup from<br>Neutral Zone",
+      "code": "aff",
+      "type": "bool"
     }
   ],
   "teleop": [
- { "name": "L1 Scores",
-      "code": "tas",
+    { "name": "Auto Scoring Position",
+      "code": "tsp",
+      "type": "clickable_image",
+      "filename": "2026/half_field.png",
+      "dimensions": "7 10",
+      "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
+      "shape": "circle 5 black red true"
+    },
+    { "name": "Fuel Scored",
+      "code": "tfs",
       "type": "counter"
     },
-    { "name": "L2 Scores",
-      "code": "tsq",
-      "type": "counter"
+    { "name": "Pickup from Depot",
+      "code": "tfd",
+      "type": "bool"
     },
-    { "name": "L3 Scores",
-      "code": "tsw",
-      "type": "counter"
+    { "name": "Pickup from Outpost",
+      "code": "tfo",
+      "type": "bool"
     },
-    { "name": "L4 Scores",
-      "code": "tsk",
-      "type": "counter"
-    },
-    { "name": "Processor Scores",
-      "code": "tsd",
-      "type": "counter"
-    },
-    { "name": "Net Scores",
-      "code": "tsg",
-      "type": "counter"
-    },
-    { "name": "Penalties",
-      "code": "pen",
-      "type": "counter"
-    },
-    { "name": "Pickup Coral From",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Pickup Algae From",
-      "code": "tpa",
-      "type": "radio",
-      "choices": {
-        "r": "Reef<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
+    { "name": "Pickup from Floor",
+      "code": "tff",
+      "type": "bool"
     }
   ],
   "endgame": [
-    { "name": "Cage Timer",
-      "code": "dt",
-      "type": "timer"
-    },
-    { "name": "Final Status",
-      "code": "fs",
-      "type":"radio",
+    { "name": "Climb",
+      "code": "tc",
+      "type": "radio",
       "choices": {
-        "p": "Parked<br>",
-        "o": "High Cage<br>",
-        "s": "Low Cage<br>",
-        "a": "Attempted/Failed & Parked<br>",
-        "x": "No park or climb attempted"
+        "1": "Level 1<br>",
+        "2": "Level 2<br>",
+        "3": "Level 2<br>",
+        "a": "Attempted<br>",
+        "x": "Not Attempted"
       },
       "defaultValue": "x"
     }
@@ -205,7 +177,19 @@
       },
       "defaultValue":"3"
     },
-    { "name": "Died/<br>Immobilized/<br>Gamepiece Stuck",
+    { "name": "Crossed Bump",
+      "code": "bmp",
+      "type": "bool"
+    },
+    { "name": "Crossed Trench",
+      "code": "tre",
+      "type": "bool"
+    },
+    { "name": "Wallbot?",
+      "code": "wbt",
+      "type": "bool"
+    },
+    { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
     },
@@ -213,26 +197,16 @@
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Coral (>2)",
-      "code": "dn",
-      "type": "bool"
-    },
-    { "name": "Would pick<br>for an alliance?",
+    { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
-      "type": "bool"
-    },
-    { "name": "Would NOT pick<br>for an alliance?",
-      "tooltip": "Would NOT pick this robot under any circumstances",
-      "code": "dnp",
       "type": "bool"
     },
     { "name": "Comments",
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 250,
-      "defaultValue": "None"
+      "maxSize": 55
     }
   ]
 }`;
