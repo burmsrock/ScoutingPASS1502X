@@ -63,7 +63,18 @@ var config_data = `
       "dimensions": "7 10",
       "allowableResponses": "4 11 18 25 32 39 46 53 60 67",
       "shape": "circle 5 black red true"
+    },
+        { "name": "Prediction",
+      "code": "p",
+      "type": "radio",
+      "choices":{
+        "r": "Red<br>",
+        "b": "Blue<br>",
+        "t": "Tie"
+        },
+        "defaultValue": "t"
     }
+
   ],
   "auton": [
     { "name": "Auto Scoring Position",
