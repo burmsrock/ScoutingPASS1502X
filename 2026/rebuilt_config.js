@@ -5,17 +5,17 @@ var config_data = `
   "page_title": "REBUILT",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "Scouter Name<br>(Firstname Lastname)",
       "code": "s",
       "type": "scouter",
-      "size": 5,
-      "maxSize": 5,
+      "size": 15,
+      "maxSize": 15,
       "required": "true"
     },
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2026ilch",
+      "defaultValue": "2025MICMP3",
       "required": "true"
     },
     { "name": "Match Level",
@@ -47,7 +47,7 @@ var config_data = `
         "r3": "Red-3",
         "b3": "Blue-3"
       },
-      "required": "true"
+      "required":"true"
     },
     { "name": "Team #",
       "code": "t",
@@ -55,6 +55,14 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
+    { "name": "Team Name update 3",
+      "code": "n",
+      "type": "text",
+      "size": 15,
+      "maxSize": 50,
+      "defaultValue": "Team Name"
+    },
+
     { "name": "Auto Start Position",
       "code": "as",
       "type": "clickable_image",
