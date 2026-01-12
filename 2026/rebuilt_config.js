@@ -108,6 +108,10 @@ var config_data = `
       "code": "tfs",
       "type": "counter"
     },
+    { "name": "Fuel Passed/Hoarded",
+      "code": "tfs",
+      "type": "counter"
+    }
   ],
   "endgame": [
     { "name": "Climb",
@@ -189,7 +193,6 @@ var config_data = `
       "code": "dnp",
       "type": "bool"
     },
-
     { "name": "Comments",
       "code": "co",
       "type": "text",
