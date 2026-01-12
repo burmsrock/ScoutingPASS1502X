@@ -56,7 +56,7 @@ var config_data = `
       "max": 99999
     },
     { "name": "Team Name",
-      "code": "name",
+      "code": "n",
       "type": "text",
       "size": 15,
       "maxSize": 50,
