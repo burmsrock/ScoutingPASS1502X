@@ -76,14 +76,6 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Auto Scoring Position",
-      "code": "asp",
-      "type": "clickable_image",
-      "filename": "2026/half_field.png",
-      "dimensions": "7 10",
-      "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
-      "shape": "circle 5 black red true"
-    },
     { "name": "Fuel Scored",
       "code": "afs",
       "type": "counter"
@@ -93,7 +85,7 @@ var config_data = `
       "type": "radio",
       "choices": {
         "c": "Climbed<br>",
-        "a": "Attempted<br>",
+        "a": "Attempted & Failed <br>",
         "x": "Not Attempted"
       },
       "defaultValue": "x"
@@ -112,30 +104,10 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Auto Scoring Position",
-      "code": "tsp",
-      "type": "clickable_image",
-      "filename": "2026/half_field.png",
-      "dimensions": "7 10",
-      "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
-      "shape": "circle 5 black red true"
-    },
     { "name": "Fuel Scored",
       "code": "tfs",
       "type": "counter"
     },
-    { "name": "Pickup from Depot",
-      "code": "tfd",
-      "type": "bool"
-    },
-    { "name": "Pickup from Outpost",
-      "code": "tfo",
-      "type": "bool"
-    },
-    { "name": "Pickup from Floor",
-      "code": "tff",
-      "type": "bool"
-    }
   ],
   "endgame": [
     { "name": "Climb",
@@ -145,7 +117,7 @@ var config_data = `
         "1": "Level 1<br>",
         "2": "Level 2<br>",
         "3": "Level 2<br>",
-        "a": "Attempted<br>",
+        "a": "Attempted & Failed<br>",
         "x": "Not Attempted"
       },
       "defaultValue": "x"
@@ -212,11 +184,18 @@ var config_data = `
       "code": "all",
       "type": "bool"
     },
+    { "name": "Would NOT pick<br>for an alliance?",
+      "tooltip": "Would NOT pick this robot under any circumstances",
+      "code": "dnp",
+      "type": "bool"
+    },
+
     { "name": "Comments",
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 55
+      "maxSize": 250
+      "defaultValue": "None"
     }
   ]
 }`;
