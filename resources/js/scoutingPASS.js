@@ -930,9 +930,10 @@ function clearForm() {
     } else {
       document.getElementById("input_m").value = match + 1
     }
+	  
 
     // Robot
-    resetRobot()
+    resetRobot();
   }
 
   // Clear XY coordinates
@@ -1007,6 +1008,12 @@ function clearForm() {
       }
     }
   }
+	
+  // Reset comment field to default:
+  if (!pitScouting) {
+    document.getElementById("input_co").value = "None";
+  }
+
   drawFields()
 }
 
@@ -1251,7 +1258,7 @@ function updateMatchStart(event) {
   }
   if (event.target.id == "input_m") {
     if (getRobot() != "" && typeof getRobot()) {
-      document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
+		document.getElementById("input_t").value = getCurrentTeamNumberFromRobot().replace("frc", "");
       onTeamnameChange();
     }
   }
@@ -1260,10 +1267,12 @@ function updateMatchStart(event) {
 function onTeamnameChange(event) {
   var newNumber = document.getElementById("input_t").value;
   var teamLabel = document.getElementById("teamname-label");
+  document.getElementById("input_n").value = getTeamName(newNumber);
   if (newNumber != "") {
     teamLabel.innerText = getTeamName(newNumber) != "" ? "You are scouting " + getTeamName(newNumber) : "That team isn't playing this match, please double check to verify correct number";
   } else {
     teamLabel.innerText = "";
+	document.getElementById("input_n").value = getTeamName(newNumber);
   }
 }
 
@@ -1432,3 +1441,4 @@ window.onload = function () {
     }
   }
 };
+
