@@ -64,7 +64,7 @@ var config_data = `
       "allowableResponses": "4 11 18 25 32 39 46 53 60 67",
       "shape": "circle 5 black red true"
     },
-        { "name": "Prediction",
+    { "name": "Prediction",
       "code": "p",
       "type": "radio",
       "choices":{
@@ -74,7 +74,6 @@ var config_data = `
         },
         "defaultValue": "t"
     }
-
   ],
   "auton": [
     { "name": "Auto Scoring Position",
