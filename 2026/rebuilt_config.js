@@ -68,7 +68,7 @@ var config_data = `
       "filename": "2026/1000006286.png",
       "clickRestriction": "one",
       "dimensions": "8 10",
-      "allowableResponses": "1 8",
+      "allowableResponses": "2 10 18 26 34 42 50 58 66 74 7 15 23 31 39 47 55 63 71 79",
       "shape": "circle 5 black red true"
     },
     { "name": "Prediction",
