@@ -55,7 +55,7 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Team Name",
+    { "name": "Team Name update 3",
       "code": "n",
       "type": "text",
       "size": 15,
