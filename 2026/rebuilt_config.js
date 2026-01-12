@@ -47,7 +47,7 @@ var config_data = `
         "r3": "Red-3",
         "b3": "Blue-3"
       },
-      "required":"true"
+      "required": "true"
     },
     { "name": "Team #",
       "code": "t",
@@ -55,12 +55,12 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-       { "name": "Team Name update 3",
+    { "name": "Team Name update 3",
       "code": "n",
       "type": "text",
       "size": 15,
       "maxSize": 50,
-      "defaultValue": getTeamName(newNumber),
+      "defaultValue": "Team Name",
     },
     { "name": "Auto Start Position",
       "code": "as",
