@@ -111,6 +111,10 @@ var config_data = `
     { "name": "Fuel Passed/Hoarded",
       "code": "tps",
       "type": "counter"
+    },
+    { "name": "Penalties",
+      "code": "pen",
+      "type": "counter"
     }
   ],
   "endgame": [
@@ -169,10 +173,6 @@ var config_data = `
     },
     { "name": "Crossed Trench",
       "code": "tre",
-      "type": "bool"
-    },
-    { "name": "Wallbot?",
-      "code": "wbt",
       "type": "bool"
     },
     { "name": "Died/Immobilized",
