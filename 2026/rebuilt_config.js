@@ -2,7 +2,7 @@ var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2026",
-  "page_title": "REBUILT 1502",
+  "page_title": "REBUILT 1502 V1.0",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Name<br>(Firstname Lastname)",
@@ -65,10 +65,10 @@ var config_data = `
     { "name": "Auto Start Position",
       "code": "as",
       "type": "clickable_image",
-      "filename": "2026/half_field.png",
+      "filename": "2026/1000006286.png",
       "clickRestriction": "one",
-      "dimensions": "7 10",
-      "allowableResponses": "4 11 18 25 32 39 46 53 60 67",
+      "dimensions": "8 10",
+      "allowableResponses": "1 8",
       "shape": "circle 5 black red true"
     },
     { "name": "Prediction",
