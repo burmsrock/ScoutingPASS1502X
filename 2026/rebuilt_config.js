@@ -109,7 +109,7 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Fuel Passed/Hoarded",
-      "code": "tfs",
+      "code": "tps",
       "type": "counter"
     }
   ],
