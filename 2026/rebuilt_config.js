@@ -55,13 +55,6 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Team Name update 3",
-      "code": "n",
-      "type": "text",
-      "size": 15,
-      "maxSize": 50,
-      "defaultValue": "Team Name",
-    },
     { "name": "Auto Start Position",
       "code": "as",
       "type": "clickable_image",
